@@ -13,6 +13,14 @@ use Aws\DynamoDb\Enum\KEYType;
 $tableNameOne = "Forum";
 $tablenameTwo = "Thread";
 
+/*
+ * The following request will put an item in the Forum table,
+ * put another item in the items table and remove another.
+ * 
+ * Actions are grouped by table and consist of a list of 
+ * requests.
+ */
+
 $response = $client->batchWriteItem(array(
 	"RequestItems" => array(
 		$tableNameOne => array( 
