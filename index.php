@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
+	<head>
+	<title>Getting Started with DynamoDB Using the aws-php-sdk</title>
+	</head>
 	<body>
+	<h1>DynamoDB - PHP</h1>
+	<p>This is a record of my work as I used the aws-php-sdk to interact with 
+	DynamoDB. The exercises were followed from: <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html">http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html</a> 
+	between 11-2013 to 12-2013.  Development environment was Eclipse (Kepler) on Windows 8.1</p>
 	<h2>Working with Tables</h2>
 	<ul>
 		<li><a href="UploadData.php">Upload Data</a></li>
@@ -26,6 +32,26 @@
 		</ul>
 	</li>
 	<li><a href="BatchWrite.php">Batch Write</a></li>
+	<li><a href="BatchGet.php">Batch Get</a></li>
+	<li><a href="BatchGetWithOpts.php">Batch Get with optional parameters:</a>
+		<ul>
+			<li>AttributesToGet:</li>
+				<ul>
+					<li>Threads</li>
+				</ul>
+		</ul>
+	</li>
+	<li><a href="UpdateItem.php">Update Item</a></li>
+	<li><a href="ConditionalUpdate.php">Conditional Update (Specifying Optional Parameters)</a>
+		<ul>
+			<li>A ConditionalCheckFailedException is thrown if the condition is not met.</li>
+		</ul>
+	</li>
+	<li><a href="DeleteItem.php">Delete Item</a></li>
+	<li><a href="ConditionalDeleteItem.php">Delete Item (Specifying Optional Parameters)</a></li>
+		<ul>
+			<li>Deletes an item if its specified attribute has a particular value</li>
+		</ul>
 	</ul>
 	</body>
 </html>
