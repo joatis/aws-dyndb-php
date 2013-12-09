@@ -52,6 +52,7 @@
 		<ul>
 			<li>Deletes an item if its specified attribute has a particular value</li>
 		</ul>
+	<li><a href="CRUDItemExample.php">CRUD Item Example</a></li>
 	</ul>
 	</body>
 </html>
